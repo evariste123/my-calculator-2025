@@ -16,7 +16,7 @@
 #calculator.container{
     background-color:#223;
     width: 50vw;
-    height: 70vh;
+    height: 60vh;
     margin-left: 250px;
     top: 100px;
     border-radius: 10px;
@@ -44,7 +44,7 @@
     position: relative;
     width: 5vw;
     margin-left: 35px;
-    top: 10px;
-    height: 6vh;
+    top: 40px;
+    height: 4vh;
     cursor: pointer;
 }
