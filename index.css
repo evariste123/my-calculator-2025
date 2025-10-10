@@ -1,0 +1,50 @@
+.eva h3{
+    position: fixed;
+    width: 50vw;
+    height: 10vh;
+    text-align: center;
+    top: 20px;
+    background-color: aqua;
+    color: black;
+    margin-left: 250px;
+    border-radius: 20px;
+     animation-name: eva;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+#calculator.container{
+    background-color:#223;
+    width: 50vw;
+    height: 60vh;
+    margin-left: 250px;
+    top: 100px;
+    border-radius: 10px;
+    position:relative;
+   
+}
+@keyframes eva{
+    0%{background-color: #245345;}
+    25%{background-color: #eba;}
+    50%{background-color: #1e40fe;}
+    75%{background-color: #bce;}
+    100%{background-color: #eeffe10e;}
+}
+#cal.calculator input{
+    position: relative;
+    width: 44.5vw;
+    height: 10vh;
+    background-color: #1eabcf11;
+    color: white;
+    margin-left: 35px;
+    top: 20px;
+    text-align: center;
+}
+.butt button{
+    position: relative;
+    width: 5vw;
+    margin-left: 35px;
+    top: 10px;
+    height: 6vh;
+    cursor: pointer;
+}
