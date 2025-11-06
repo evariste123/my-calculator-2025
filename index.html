@@ -12,44 +12,31 @@
   </div>
   <section class="container" id="calculator">
   <div class="calculator" id="cal">
-  <input type="text" id="display" placeholder="enjoy with new calculator..start !!! 0" readonly>
+  <input type="text" id="display" placeholder="0" write-only>
   </div>
   <!-- Buttons -->
   <br>
   <div class="butt">
-  <button onclick="appendToDisplay('7')"
-   style="background-color: orangered;border-radius: 5px;"> <span style="color: rgb(253, 253, 255);">7</button></span>
-<button onclick="appendToDisplay('8')" style="background-color: orangered;border-radius: 5px;"> <span style="color: rgb(242, 242, 247);">8</button></span>
-<button onclick="appendToDisplay('9')" style="background-color: orangered;border-radius: 5px;"> <span style="color: rgb(244, 244, 248);">9</button></span>
-<button onclick="dividetoDisplay('')" style="background-color: orangered;border-radius: 5px;"> <span style="color: blue;">/</button></span>
-<button onclick="multiplytoDisplay('')" style="background-color: orangered;border-radius: 5px;"> <span style="color: blue;">*</button></span>
-<button onclick="clearDisplay()" style="background-color: orangered;border-radius: 5px;"> <span style="color: blue;">delete</button></span>
-</span>
-<br><br><br>
-<span style="color: orange;">
-<button onclick="appendToDisplay('6')" style="background-color: blue;border-radius: 5px;"><span style="color: rgb(248, 247, 247);">6</button></span>
-<button onclick="appendToDisplay('5')" style="background-color: blue;border-radius: 5px;"><span style="color:rgb(255, 253, 253)">5</button></span>
-<button onclick="appendToDisplay('4')" style="background-color: blue;border-radius: 5px;"><span style="color:rgb(247, 244, 244);">4</button></span>
-<button onclick="appendToDisplay('0')" style="background-color: blue;border-radius: 5px;"><span style="color: rgb(252, 252, 252);">0</button></span>
-<button onclick="appendToDisplay('.')" style="background-color: blue;border-radius: 5px;"><span style="color:orangered;">.</button></span>
-<button onclick="percentToDisplay('')" style="background-color: blue;border-radius: 5px;"><span style="color:orangered;">%</button></span>
-<br><br><br>
-<span style="color: black;">
-  <button onclick="appendToDisplay('1')" style="background-color: yellow;border-radius:  5px;"><span style="color:rgb(250, 6, 250);"></span>1</button></span>
-  <button onclick="appendToDisplay('2')" style="background-color: yellow;border-radius: 5px;"><span style="color:rgb(240, 5, 228);"></span>2</button></span>
-  <button onclick="appendToDisplay('3')" style="background-color: yellow;border-radius: 5px;"><span style="color:rgb(255, 6, 222);"></span>3</button></span>
-  <button onclick="appendToDisplay('+')" style="background-color: yellow;border-radius: 5px;"><span style="color:darkcyan;"></span>+</button></span>
-  <button onclick="calculate()" style="background-color: yellow;border-radius: 5px;"><span style="color:rgb(12, 173, 173);"></span>=</button></span>
-  <button onclick="clearDisplay()" style="background-color: yellow;border-radius: 5px;"><span style="color:darkcyan;"></span>Clear</button></span>
-
-  <br><br><br>
-  <button onclick="appendToDisplay('-')" style="background-color: green;border-radius: 5px;"><span style="color:magenta;"></span>-</button></span>
-  <button onclick="appendToDisplay('()')" style="background-color: green;border-radius: 5px;"><span style="color:magenta;"></span>()</button></span>
-  <button onclick="appendToDisplay('&')" style="background-color: green;border-radius: 5px;"><span style="color:magenta;"></span>&</button></span>
-  <button onclick="exponetialToDisplay('^')" style="background-color: green;border-radius: 5px;"><span style="color:magenta;"></span>^</button></span>
-  <button onclick="appendToDisplay('$')" style="background-color:green;border-radius: 5px;"><span style="color:magenta;"></span>$</button></span>
-  <button onclick="appendToDisplay('#')" style="background-color: green;border-radius: 5px;"><span style="color:magenta;"></span>#</button></span>
-  <br><br><br>
+    <button onclick="clearDisplay()">C</button>
+  <button onclick="dividetoDisplay('')">/</button>
+  <button onclick="multiplytoDisplay('')">*</button>
+  <button onclick="clearDisplay()" >d</button>
+    <button onclick="appendToDisplay('7')">7</button>
+<button onclick="appendToDisplay('8')" >8</button>
+<button onclick="appendToDisplay('9')">9</button>
+  <button onclick="appendToDisplay('-')">-</button>
+<button onclick="appendToDisplay('4')" >4</button>
+<button onclick="appendToDisplay('5')" >5</button>
+<button onclick="appendToDisplay('6')" >6</button>
+  <button onclick="appendToDisplay('+')">+</button>
+  <button onclick="appendToDisplay('1')">1</button>
+  <button onclick="appendToDisplay('2')">2</button>
+  <button onclick="appendToDisplay('3')">3</button>
+  <button onclick="calculate()">=</button>
+<button onclick="percentToDisplay('')" >%</button>
+  <button onclick="appendToDisplay('0')" >0</button>
+  <button onclick="appendToDisplay('.')">.</button>
+  <button onclick="appendToDisplay('happy new year 2026')">o</button>
   </div>
   <script>
     function appendToDisplay(value) {
@@ -62,7 +49,7 @@
     }
 
     function clearDisplay() {
-      document.getElementById('display').value = '';
+      document.getElementById('display').value = ' ';
     }
     function dividetoDisplay(){
       document.getElementById('display').value += '/';
@@ -75,12 +62,6 @@
     {
       document.getElementById('display').value +='%';
     }
-    function exponetialToDisplay()
-    {
-      document.getElementById('display').value +='^';
-    }
-   
-    
   </script>
   </div>
   </section>

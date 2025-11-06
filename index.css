@@ -1,9 +1,9 @@
 .eva h3{
     position: fixed;
-    width: 50vw;
+    width: 38vw;
     height: 10vh;
     text-align: center;
-    top: 20px;
+    top: 0px;
     background-color: aqua;
     color: black;
     margin-left: 250px;
@@ -15,10 +15,10 @@
 }
 #calculator.container{
     background-color:#223;
-    width: 50vw;
-    height: 60vh;
+    width: 38vw;
+    height: 65vh;
     margin-left: 250px;
-    top: 100px;
+    top: 80px;
     border-radius: 10px;
     position:relative;
    
@@ -32,19 +32,40 @@
 }
 #cal.calculator input{
     position: relative;
-    width: 44.5vw;
-    height: 10vh;
+    width: 30vw;
+    height: 20vh;
     background-color: #1eabcf11;
+    border: 1px solid #223;
     color: white;
     margin-left: 35px;
+    font-size: 25px;
+    border-radius: 20px;
     top: 20px;
-    text-align: center;
+    text-align: right;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#cal.calculator input:hover{
+    background-color: white;
+    color: black;
+    font-size: 20px;
 }
 .butt button{
     position: relative;
     width: 5vw;
+    border: 1px solid #223;
+    border-radius: 100px;
     margin-left: 35px;
-    top: 40px;
-    height: 4vh;
+    font-size: 20px;
+    text-decoration: solid;
+    text-transform: capitalize;
+    top: 20px;
+    height: 7vh;
     cursor: pointer;
+    transition: 0.3s;
+}
+.butt button:hover{
+    background-color: #223;
+    font-size: 20px;
+    color: white;
 }
